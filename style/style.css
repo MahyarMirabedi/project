@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+    direction: rtl;
+    font-family: Vazirmatn;
+}
+
+#menu {
+    display: flex;
+    background-color: #333333;
+    overflow: hidden;
+    position: fixed;
+    padding: 8px;
+    width: 100%;
+}
+
+#menu a {
+    background-color: #333333;
+    text-decoration: none;
+    color: white;
+    padding: 1px 10px;
+}
+
+#menu a:hover {
+    opacity: 0.9;
+
+}
+
+.slider {
+    display: flex;
+    padding-top: 50px;
+    justify-content: center;
+
+}
+
+.mycontainer {
+    display: flex;
+    background-color: #fafafa;
+}
+
+.mycontainer>div {
+    width: 33%;
+    margin: 20px;
+    border: #d6d6d6 solid 2px;
+}
+
+.main {
+    padding: 20px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4;
+}
+
+.colums {
+    flex: 15%;
+    /* max-width: 43%; */
+    border: solid #d6d6d6 2px;
+    background-color: #eeeeee;
+    margin: 5px;
+    padding: 10px;
+}
+
+#servise {
+    font-size: xx-large;
+    color: green;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+#user {
+    font-size: xx-large;
+    color: blue;
+    float: left;
+    margin: 25px;
+}
+
+#user ::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+input[type=text],
+input[type=tel],
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    width: 100%;
+    cursor: pointer;
+    margin: auto;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.form {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+}
+
+.form1 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background-color: #333333;
+    padding: 10px;
+    color: #f2f2f2;
+}
+
+footer a {
+    text-decoration: none;
+    color: #f2f2f2;
+    display: flex;
+
+}
+
+@media (max-width: 650px) {
+    #menu {
+        flex-direction: column;
+        position: relative;
+        text-align: center;
+    }
+
+    .slider {
+        flex-direction: column;
+    }
+
+    .mycontainer {
+        flex-direction: column;
+    }
+
+    .mycontainer div {
+        width: 90%;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
